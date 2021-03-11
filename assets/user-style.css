@@ -152,14 +152,18 @@ h6 {
   padding: 134px 0 24px;
   width: 100%;
   position: relative;
-  background-color: #e5e5e5;
+  background-color: #f9f9f9;
   min-height: calc(100vh - 172px);
+}
+.content-wrap.homepage {
+  padding: 110px 0 24px;
 }
 
 /* footer style */
 .footer {
   width: 100%;
   background-color: #fafafa;
+  border-top: 1px solid #f1f1f2;
 }
 .footer-adresss {
   display: flex;
@@ -236,4 +240,76 @@ h6 {
   color: #ffffff;
   margin: 0;
   font-size: 14px;
+}
+
+/* Homepage style */
+.banner-wrapper {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+.jalur-wrapper {
+  width: 95%;
+  margin: -35px auto 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jalur-menu {
+  width: 25%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 24px 16px;
+}
+.jalur-menu.zonasi {
+  background-color: #0775d9;
+  border-radius: 4px 0 0 4px;
+}
+.jalur-menu.afirmasi {
+  background-color: #2194ff;
+}
+.jalur-menu.pindah {
+  background-color: #0775d9;
+}
+.jalur-menu.prestasi {
+  background-color: #02498c;
+  border-radius: 0 4px 4px 0;
+}
+.jalur-icon {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+  margin-right: 8px;
+}
+.jalur-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+}
+.jalur-title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  line-height: 1.25;
+  margin-bottom: 4px;
+}
+.jalur-link {
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+}
+.jalur-menu:hover,
+.jalur-menu:focus {
+  color: #f1f1f2;
+  text-decoration: none;
 }
