@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "roboto", sans-serif;
+  line-height: 1;
+  background-color: #fafafa;
+  font-size: 14px;
+  font-weight: 400;
+  color: #282828;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #282828;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: #282828;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fafafa;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
+  z-index: 1;
+}
+.top-header-container {
+  background-color: #032f59;
+}
+.top-header {
+  max-height: 70x;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 8px 15px;
+}
+.top-header > p {
+  color: #ffffff;
+  margin: 0;
+  font-size: 14px;
+}
+.bottom-header {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 16px 15px;
+}
+.half-wrap {
+  max-width: 50%;
+}
+.logo {
+  width: 340px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.logo-image {
+  max-width: 40px;
+  margin-right: 8px;
+}
+.logo-title {
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+}
+.contact-wrap {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 24px;
+}
+.contact-icon,
+.auth-icon {
+  height: 28px;
+  width: 28px;
+}
+.contact-text,
+.auth-text {
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.contact-text > span,
+.auth-text > span {
+  font-size: 12px;
+  color: #898989;
+  letter-spacing: 0.4px;
+}
+.contact-text > p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+.auth-text > a {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+  color: #0099d9;
+}
+
+.auth-wrap {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 0 0 24px;
+}
+.button-login {
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0775d9;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 16px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.button-login:hover,
+.button-login:focus {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #032f59;
+}
+/* content style */
+.container {
+  max-width: 1140px;
+}
+.content-wrap {
+  padding: 134px 0 24px;
+  width: 100%;
+  position: relative;
+  background-color: #e5e5e5;
+  min-height: calc(100vh - 172px);
+}
+
+/* footer style */
+.footer {
+  width: 100%;
+  background-color: #fafafa;
+}
+.footer-adresss {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 16px 0;
+  max-width: 500px;
+}
+.address-icon {
+  height: 100px;
+}
+.address-text {
+  margin-left: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.address-bold {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.15;
+  margin-bottom: 4px;
+}
+.address-thin {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.25px;
+  color: #898989;
+}
+.footer-contact {
+  padding: 16px 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 230px;
+}
+.contact-label {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 180%;
+  letter-spacing: 0.15px;
+}
+.contact-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fafafa;
+  border-color: #fafafa;
+  color: #25d366;
+  font-weight: 600;
+  width: 100%;
+}
+.contact-button > img {
+  height: 35px;
+  margin-right: 16px;
+}
+.footer-bottom-container {
+  background-color: #032f59;
+}
+.footer-bottom {
+  max-height: 70x;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 8px 15px;
+}
+.footer-bottom > p {
+  color: #ffffff;
+  margin: 0;
+  font-size: 14px;
+}
