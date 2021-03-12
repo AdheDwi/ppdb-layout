@@ -169,7 +169,7 @@ h6 {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 16px 0;
+  padding: 24px 0;
   max-width: 500px;
 }
 .address-icon {
@@ -312,4 +312,141 @@ h6 {
 .jalur-menu:focus {
   color: #f1f1f2;
   text-decoration: none;
+}
+
+.list-sekolah-wrapper {
+  padding: 68px 0 24px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.home-title {
+  width: 100%;
+  margin-bottom: 32px;
+}
+.home-title h1 {
+  font-size: 24px;
+  letter-spacing: 0.18px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+.home-title h5 {
+  font-size: 16px;
+  letter-spacing: 0.15px;
+  color: #898989;
+  font-weight: 400;
+}
+.list-sekolah-card {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.list-sekolah-logo {
+  width: 60px;
+  height: 60px;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-sekolah-image {
+  width: 45px;
+}
+.list-sekolah-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+.nama-sekolah-text {
+  font-size: 20px;
+  letter-spacing: 0.15px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.alamat-sekolah-text {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+  color: #898989;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.detail-sekolah-link {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: #898989;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0;
+}
+.detail-sekolah-link > i {
+  margin: -2px 0 0 -4px;
+  font-size: 16px;
+  color: #898989;
+}
+.detail-sekolah-link:hover,
+.detail-sekolah-link:focus {
+  color: #898989;
+  text-decoration: none;
+}
+.pagination-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+.btn-page-slide {
+  background-color: transparent;
+  color: #c4c4c4 !important;
+  border-radius: 50% !important;
+  height: 24px;
+  width: 24px;
+  border: 2px solid #c4c4c4;
+  font-size: 12px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px !important;
+}
+.btn-page-slide > i {
+  font-size: 18px;
+  color: #c4c4c4;
+  font-weight: 700;
+}
+.btn-page-slide:hover,
+.btn-page-slide:focus {
+  background-color: #00923f;
+  border-color: #00923f;
+}
+
+.btn-page-slide:hover > i,
+.btn-page-slide:focus > i {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.btn-dot {
+  background-color: #c4c4c4;
+  border-radius: 50% !important;
+  height: 10px;
+  width: 10px;
+  font-size: 12px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0 4px !important;
+}
+.btn-dot.active,
+.btn-dot:hover,
+.btn-dot:focus {
+  background-color: #00923f;
 }
