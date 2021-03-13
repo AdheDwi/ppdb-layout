@@ -492,6 +492,9 @@ h6 {
   font-weight: 500;
   text-transform: uppercase;
 }
+.back-link.page-jalur {
+  width: 250px;
+}
 .back-link > i {
   margin-right: 8px;
 }
@@ -621,4 +624,51 @@ h6 {
   font-weight: 400;
   color: #898989;
   margin-bottom: 8px;
+}
+.info-jalur-menu {
+  display: flex;
+  flex-direction: row;
+  margin: 24px 0 36px;
+}
+.info-jalur-tab {
+  width: 16.667%;
+  height: 60px;
+  border-radius: 0;
+  border: none;
+  color: #0775d9;
+  font-weight: 700;
+  margin: 0 !important;
+  display: flex;
+  align-items: center;
+}
+.info-jalur-tab > span {
+  color: #0775d9;
+  font-weight: 700;
+}
+.info-jalur-tab.active,
+.info-jalur-tab:hover,
+.info-jalur-tab:focus {
+  background-color: #0775d9 !important;
+  color: #ffffff;
+  border: none !important;
+  font-weight: 700;
+  margin: 0 !important;
+}
+.info-jalur-tab.active > span,
+.info-jalur-tab:hover > span,
+.info-jalur-tab:focus > span {
+  color: #ffffff !important;
+  font-weight: 700;
+}
+.info-jalur-tab:first-child {
+  border-radius: 4px 0 0 4px;
+}
+.info-jalur-tab:last-child {
+  border-radius: 0 4px 4px 0;
+}
+.info-jalur-tab-icon {
+  margin-right: 8px;
+  background-color: rgba(7, 116, 217, 0.5);
+  border-radius: 10px;
+  padding: 4px;
 }
