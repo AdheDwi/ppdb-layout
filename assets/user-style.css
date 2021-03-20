@@ -47,7 +47,7 @@ h6 {
   left: 0;
   background-color: #fafafa;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16);
-  z-index: 1;
+  z-index: 99;
 }
 .top-header-container {
   background-color: #032f59;
@@ -622,7 +622,7 @@ h6 {
 .form-group p {
   font-size: 12px;
   font-weight: 400;
-  color: #898989;
+  color: #c4c4c4;
   margin-bottom: 8px;
 }
 .info-jalur-menu {
@@ -642,7 +642,7 @@ h6 {
   align-items: center;
 }
 .info-jalur-tab > span {
-  color: #0775d9;
+  color: #898989;
   font-weight: 700;
 }
 .info-jalur-tab.active,
@@ -668,7 +668,184 @@ h6 {
 }
 .info-jalur-tab-icon {
   margin-right: 8px;
-  background-color: rgba(7, 116, 217, 0.5);
+  background-color: #c4c4c4;
   border-radius: 10px;
   padding: 4px;
+}
+.info-jalur-tab.active .info-jalur-tab-icon,
+.info-jalur-tab:hover .info-jalur-tab-icon,
+.info-jalur-tab:focus .info-jalur-tab-icon {
+  background-color: rgba(7, 116, 217, 0.5);
+}
+
+.title-daftar {
+  font-size: 24px;
+  letter-spacing: 0.18px;
+  padding-bottom: 24px;
+  font-weight: 400;
+}
+.form-control.form-main {
+  height: 40px !important;
+  border-color: #eaeaea !important;
+  border-radius: 6px !important;
+  font-weight: 500;
+  color: #898989;
+}
+.form-control.form-main:focus,
+.form-main-textarea:focus,
+.custom-file-label:focus {
+  box-shadow: none;
+  border: 1px solid rgba(7, 116, 217, 0.5) !important;
+}
+.form-main-select {
+  padding-right: 40px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}
+.icon-select {
+  position: absolute;
+  top: 7px;
+  right: 25px;
+}
+.form-main-textarea {
+  resize: none;
+  border-radius: 6px !important;
+  font-weight: 500;
+  color: #898989;
+}
+.input-group-prepend .file-upload {
+  background-color: #fbfffd;
+  border-color: #e5eaee;
+  height: 40px;
+}
+.custom-file-input {
+  height: 40px;
+}
+.custom-file-label {
+  height: 40px !important;
+  border-color: #eaeaea !important;
+  border-radius: 0 6px 6px 0 !important;
+  font-weight: 500;
+  color: #898989;
+  display: flex;
+  align-items: center;
+}
+.custom-file-label::after {
+  display: none;
+}
+
+input[type="radio"]:not(old) {
+  width: 2em;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  opacity: 0;
+}
+
+input[type="radio"]:not(old) + label {
+  display: flex;
+  align-items: center;
+  margin-left: -2em;
+  line-height: 1.5em;
+  color: #898989;
+  font-weight: 500;
+}
+
+input[type="radio"]:not(old) + label > span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 4px;
+  border: 1px solid #eaeaea;
+  border-radius: 50%;
+  background: #ffffff;
+  vertical-align: bottom;
+}
+
+input[type="radio"]:not(old):checked + label {
+  color: #282828;
+  font-weight: 500;
+}
+
+input[type="radio"]:not(old):checked + label > span {
+  background-color: #fafafa;
+  border-color: #00923f;
+}
+
+input[type="radio"]:not(old):checked + label > span > span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 3px;
+  border: 1px solid #00923f;
+  border-radius: 50%;
+  background: #00923f;
+}
+
+.checkbox-address {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  height: 20px;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #898989;
+  font-weight: 500;
+}
+
+.checkbox-address input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+}
+
+.checkbox-address input:checked {
+  color: #282828;
+}
+
+.checkbox-address input:checked ~ .checkmark {
+  background-color: #00923f;
+  border-color: #00923f;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-address input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-address .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
