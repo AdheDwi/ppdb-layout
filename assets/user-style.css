@@ -557,6 +557,13 @@ h6 {
 .btn-success {
   background-color: #00923f !important;
   border-color: #00923f !important;
+  font-weight: 500;
+}
+.btn-light {
+  background-color: #fff !important;
+  border-color: #00923f !important;
+  color: #00923f !important;
+  font-weight: 500;
 }
 .forgot-link,
 .forgot-link:hover,
@@ -848,4 +855,87 @@ input[type="radio"]:not(old):checked + label > span > span {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+/* Info Sekolah Style */
+.media-info-sekolah {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.img-media-sekolah {
+  height: 150px;
+}
+.info-sekolah-title {
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  letter-spacing: 0.18px;
+}
+.list-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.icon-info {
+  margin-right: 6px;
+}
+.list-info > p {
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  color: #898989;
+  font-weight: 400;
+}
+.media-info-text {
+  padding: 24px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+.media-info-text h1,
+.media-info-text h2,
+.media-info-text h3,
+.media-info-text h4,
+.media-info-text h5,
+.media-info-text h6 {
+  font-weight: 500;
+  color: #282828;
+  letter-spacing: 0.15px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.media-info-text p {
+  color: #696969;
+  font-size: 16px;
+  letter-spacing: 0.25;
+  margin-bottom: 6px;
+  text-align: justify;
+  line-height: 1.25;
+}
+.media-info-text a {
+  font-size: 16px;
+  text-decoration: underline;
+  color: #0099d9;
+  letter-spacing: 0.25;
+  line-height: 1.25;
+}
+.card-info-sekolah {
+  border-radius: 0 !important;
+  border: none !important;
+  padding-left: 0;
+  padding-top: 24px;
+}
+.card-info-sekolah > h5 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.card-info-sekolah > p {
+  color: #696969;
+  font-weight: 400;
+  font-size: 16px;
+}
+.card-info-sekolah > p > strong {
+  color: #0099d9;
+  font-weight: 500;
+  font-size: 16px;
 }
