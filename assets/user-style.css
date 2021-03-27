@@ -964,3 +964,43 @@ input[type="radio"]:not(old):checked + label > span > span {
   text-align: justify;
   line-height: 1.25;
 }
+.content-jadwal {
+  min-height: 100vh;
+}
+
+/* Dialog Style */
+.modal-header {
+  border-bottom: none;
+  padding: 24px 24px 0;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+.modal-header .close > span {
+  font-size: 18px;
+}
+.pendaftaran-sukses {
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  padding: 0 24px 24px;
+}
+.pendaftaran-sukses h5,
+.pendaftaran-close h5 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #282828;
+  margin-bottom: 8px;
+  margin-top: 16px;
+}
+.pendaftaran-sukses p {
+  font-size: 16px;
+  color: #696969;
+  margin-bottom: 24px;
+}
+.pendaftaran-close p {
+  font-size: 16px;
+  color: #696969;
+  margin-bottom: 24px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}

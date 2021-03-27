@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PPDB</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+      integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/user-style.css" />
+    <link rel="stylesheet" href="./assets/fullcalendar/lib/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="top-header-container">
+        <div class="top-header d-flex justify-content-end align-item-center">
+          <p>Jam pelayanan: Senin - Jum’at 08.00 - 16.00 WITA</p>
+        </div>
+      </div>
+      <div
+        class="bottom-header d-flex justify-content-between align-item-center"
+      >
+        <div class="half-wrap">
+          <div class="logo">
+            <img
+              class="logo-image"
+              src="./assets/img/logo-sumbawa-barat.svg"
+              alt="logo-sumbawa-barat"
+            />
+            <span class="logo-title"
+              >Dinas Pendidikan Pemuda dan Olahraga Kabupaten Sumbawa
+              Barat</span
+            >
+          </div>
+        </div>
+        <div class="half-wrap d-flex justify-content-end align-item-center">
+          <div class="contact-wrap">
+            <img
+              class="contact-icon"
+              src="./assets/img/calling-icon.svg"
+              alt="contact-icon"
+            />
+            <div class="contact-text">
+              <span>Hubungi kami</span>
+              <p>021 3456784</p>
+            </div>
+          </div>
+          <div class="auth-wrap">
+            <!-- Sebelum Login -->
+            <!-- <a href="#" class="button-login">login / daftar</a> -->
+            <!-- Sesudah Login -->
+            <img
+              class="auth-icon"
+              src="./assets/img/dot-blue.svg"
+              alt="auth-icon"
+            />
+            <div class="auth-text">
+              <span>Selamat datang</span>
+              <a href="#">1234567</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="content-wrap">
+      <div class="container">
+        <div class="text-left">
+          <a href="index.html" class="back-link page-jalur">
+            <i class="material-icons"> arrow_back </i> Pendaftaran Jalur Zonasi
+          </a>
+        </div>
+        <div class="info-jalur-menu list-group">
+          <a
+            class="list-group-item list-group-item-action info-jalur-tab"
+            href="aturan.html"
+          >
+            <img
+              src="./assets/img/paper.svg"
+              alt="aturan"
+              class="info-jalur-tab-icon"
+            />
+            <span>Aturan</span>
+          </a>
+          <a
+            class="list-group-item list-group-item-action info-jalur-tab"
+            href="alur.html"
+          >
+            <img
+              src="./assets/img/login.svg"
+              alt="alur daftar"
+              class="info-jalur-tab-icon"
+            />
+            <span>Alur Daftar</span>
+          </a>
+          <a
+            class="list-group-item list-group-item-action info-jalur-tab"
+            href="jadwal.html"
+          >
+            <img
+              src="./assets/img/calendar.svg"
+              alt="jadwal"
+              class="info-jalur-tab-icon"
+            />
+            <span>Jadwal</span>
+          </a>
+          <a
+            class="list-group-item list-group-item-action info-jalur-tab active"
+            href="pendaftaran.html"
+          >
+            <img
+              src="./assets/img/edit.svg"
+              alt="daftar"
+              class="info-jalur-tab-icon"
+            />
+            <span>Daftar</span>
+          </a>
+          <a
+            class="list-group-item list-group-item-action info-jalur-tab"
+            href="kuota.html"
+          >
+            <img
+              src="./assets/img/chart.svg"
+              alt="kuota"
+              class="info-jalur-tab-icon"
+            />
+            <span>Daya Tampung</span>
+          </a>
+          <a
+            class="list-group-item list-group-item-action info-jalur-tab"
+            href="pengumuman.html"
+          >
+            <img
+              src="./assets/img/document.svg"
+              alt="pengumuman"
+              class="info-jalur-tab-icon"
+            />
+            <span>Pengumuman</span>
+          </a>
+        </div>
+
+        <div class="tab-content">
+          <div class="tab-pane active">
+
+            <!-- Pendaftaran Masih Ditutup -->
+            <!-- <div class="text-center w-50 mx-auto p-5 pendaftaran-close">
+              <img src="" alt="">
+              <h5>Pendaftaran Belum Dibuka</h5>
+              <p>Pendaftaran untuk Jalur Afirmasi akan dibuka pada tanggal 06 Mei - 10 Mei 2021</p>
+            </div> -->
+            
+            <form>
+              <!-- DATA REGISTRASI  -->
+              <div class="card border-0 rounded-0 p-5 mb-3">
+                <div class="row">
+                  <div class="col-md-8 offset-md-2">
+                    <h4 class="title-daftar border-bottom mb-3">
+                      Data Registrasi
+                    </h4>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input1"
+                        >Jalur Pendaftaran:</label
+                      >
+                      <div class="col-md-7">
+                        <input
+                          type="text"
+                          class="form-control form-main"
+                          id="input1"
+                          disabled
+                          value="Jalur Zonasi"
+                        />
+                        <small class="form-text text-danger"
+                          >Tidak boleh kosong</small
+                        >
+                      </div>
+                    </div>
+
+                    <div class="form-group row py-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input2"
+                        >Asal Sekolah:</label
+                      >
+                      <div class="col-md-7">
+                        <input
+                          type="text"
+                          class="form-control form-main"
+                          id="input2"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row py-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input3"
+                        >Pilihan Sekolah 1:</label
+                      >
+                      <div class="col-md-7 position-relative">
+                        <select
+                          id="input3"
+                          class="form-control form-main form-main-select"
+                        >
+                          <option selected>
+                            Pilih Sekolah Menengah Pertama
+                          </option>
+                          <option>...</option>
+                        </select>
+                        <img
+                          src="./assets//img/arrow-green.svg"
+                          alt=""
+                          class="icon-select"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-1 pb-3">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input4"
+                        >Pilihan Sekolah 2:</label
+                      >
+                      <div class="col-md-7 position-relative">
+                        <select
+                          id="input5"
+                          class="form-control form-main form-main-select"
+                        >
+                          <option selected>
+                            Pilih Sekolah Menengah Pertama
+                          </option>
+                          <option>...</option>
+                        </select>
+                        <img
+                          src="./assets//img/arrow-green.svg"
+                          alt=""
+                          class="icon-select"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- DATA DIRI  -->
+              <div class="card border-0 rounded-0 p-5 mb-3">
+                <div class="row">
+                  <div class="col-md-8 offset-md-2">
+                    <h4 class="title-daftar border-bottom mb-3">Data Diri</h4>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input5"
+                        >Nama Lengkap:</label
+                      >
+                      <div class="col-md-7">
+                        <input
+                          type="text"
+                          class="form-control form-main"
+                          id="input5"
+                        />
+                        <small class="form-text text-danger"
+                          >Tidak boleh kosong</small
+                        >
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input6"
+                        >NISN:</label
+                      >
+                      <div class="col-md-7">
+                        <input
+                          type="text"
+                          class="form-control form-main"
+                          id="input6"
+                          disabled
+                          value="123456"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input7"
+                        >Jenis Kelamin:</label
+                      >
+                      <div class="col-md-7 d-flex align-items-center">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="inlineRadioOptions"
+                            id="inlineRadio1"
+                            value="option1"
+                            checked
+                          />
+                          <label class="form-check-label" for="inlineRadio1"
+                            ><span><span></span></span>Laki-Laki</label
+                          >
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="inlineRadioOptions"
+                            id="inlineRadio2"
+                            value="option2"
+                          />
+                          <label class="form-check-label" for="inlineRadio2"
+                            ><span><span></span></span>Perempuan</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input7"
+                        >Nomor Kartu Keluarga:</label
+                      >
+                      <div class="col-md-7">
+                        <input
+                          type="text"
+                          class="form-control form-main"
+                          id="input7"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input8"
+                        >Tempat Lahir:</label
+                      >
+                      <div class="col-md-7">
+                        <input
+                          type="text"
+                          class="form-control form-main"
+                          id="input8"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input9"
+                        >Tanggal Lahir:</label
+                      >
+                      <div class="col-md-4 position-relative">
+                        <input
+                          type="text"
+                          class="form-control form-main datepicker"
+                          id="input9"
+                        />
+                        <img
+                          src="./assets//img/calendar-green.svg"
+                          alt=""
+                          class="icon-select"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input10"
+                        >Agama:</label
+                      >
+                      <div class="col-md-7 position-relative">
+                        <select
+                          id="input10"
+                          class="form-control form-main form-main-select"
+                        >
+                          <option selected>Pilih Agama</option>
+                          <option>...</option>
+                        </select>
+                        <img
+                          src="./assets//img/arrow-green.svg"
+                          alt=""
+                          class="icon-select"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input11"
+                        >Alamat Lengkap:</label
+                      >
+                      <div class="col-md-7">
+                        <textarea
+                          class="form-control form-main-textarea"
+                          id="input11"
+                          rows="3"
+                        ></textarea>
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input12"
+                        >Provinsi:</label
+                      >
+                      <div class="col-md-7 position-relative">
+                        <select
+                          id="input12"
+                          class="form-control form-main form-main-select"
+                          disabled
+                        >
+                          <option selected>Nusa Tenggara Barat</option>
+                        </select>
+                        <img
+                          src="./assets//img/arrow-green.svg"
+                          alt=""
+                          class="icon-select"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input13"
+                        >Kota/Kabupaten:</label
+                      >
+                      <div class="col-md-7 position-relative">
+                        <select
+                          id="input13"
+                          class="form-control form-main form-main-select"
+                          disabled
+                        >
+                          <option selected>Nusa Tenggara Barat</option>
+                        </select>
+                        <img
+                          src="./assets//img/arrow-green.svg"
+                          alt=""
+                          class="icon-select"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input14"
+                        >Kecamatan:</label
+                      >
+                      <div class="col-md-7 position-relative">
+                        <select
+                          id="input14"
+                          class="form-control form-main form-main-select"
+                        >
+                          <option selected>Nusa Tenggara Barat</option>
+                        </select>
+                        <img
+                          src="./assets//img/arrow-green.svg"
+                          alt=""
+                          class="icon-select"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input15"
+                        >Desa/Kelurahan:</label
+                      >
+                      <div class="col-md-7 position-relative">
+                        <select
+                          id="input15"
+                          class="form-control form-main form-main-select"
+                        >
+                          <option selected>Nusa Tenggara Barat</option>
+                        </select>
+                        <img
+                          src="./assets//img/arrow-green.svg"
+                          alt=""
+                          class="icon-select"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 mb-0">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input16"
+                        >Pas Foto:</label
+                      >
+                      <div class="col-md-7 position-relative">
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span
+                              class="input-group-text file-upload"
+                              for="inputGroupFile01"
+                              ><img
+                                src="./assets/img/upload-form.svg"
+                                alt=""
+                                class="label-img"
+                            /></span>
+                          </div>
+                          <div class="custom-file">
+                            <input
+                              type="file"
+                              class="custom-file-input form-main"
+                              id="inputGroupFile01"
+                              aria-describedby="inputGroupFileAddon01"
+                            />
+                            <label
+                              class="custom-file-label"
+                              for="inputGroupFile01"
+                              >Pilih File</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group row pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input16"
+                      ></label>
+                      <div class="col-md-8">
+                        <p class="note-form">
+                          File yang diunggah maksimal 5MB setiap file dengan
+                          format JPG dan PNG
+                        </p>
+                      </div>
+                    </div>
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input17"
+                        >Email:</label
+                      >
+                      <div class="col-md-7">
+                        <input
+                          type="text"
+                          class="form-control form-main"
+                          id="input17"
+                          disabled
+                          value="email@gmail.com"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <!-- DATA AYAH  -->
+              <div class="card border-0 rounded-0 p-5 mb-3">
+                <div class="row">
+                  <div class="col-md-8 offset-md-2">
+                    <h4 class="title-daftar border-bottom mb-3">
+                      Data Ayah Kandung
+                    </h4>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input18"
+                        >Nama Ayah Kandung:</label
+                      >
+                      <div class="col-md-7">
+                        <input
+                          type="text"
+                          class="form-control form-main"
+                          id="input18"
+                        />
+                        <small class="form-text text-danger"
+                          >Tidak boleh kosong</small
+                        >
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input19"
+                        >Tanggal Lahir:</label
+                      >
+                      <div class="col-md-4 position-relative">
+                        <input
+                          type="text"
+                          class="form-control form-main datepicker"
+                          id="input19"
+                        />
+                        <img
+                          src="./assets//img/calendar-green.svg"
+                          alt=""
+                          class="icon-select"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input20"
+                        >Pekerjaan:</label
+                      >
+                      <div class="col-md-7">
+                        <input
+                          type="text"
+                          class="form-control form-main"
+                          id="input20"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input21"
+                        >Pendidikan:</label
+                      >
+                      <div class="col-md-7">
+                        <input
+                          type="text"
+                          class="form-control form-main"
+                          id="input21"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input22"
+                        >Alamat Lengkap:</label
+                      >
+                      <div class="col-md-7 d-flex align-items-center">
+                        <div class="form-check pl-0">
+                          <label class="form-check-label checkbox-address" for="defaultCheck1">
+                            Sama dengan alamat siswa
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-1 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        ></label
+                      >
+                      <div class="col-md-7">
+                        <textarea
+                          class="form-control form-main-textarea"
+                          id="input22"
+                          rows="3"
+                        ></textarea>
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input23"
+                        >Provinsi:</label
+                      >
+                      <div class="col-md-7 position-relative">
+                        <select
+                          id="input23"
+                          class="form-control form-main form-main-select"
+                          disabled
+                        >
+                          <option selected>Nusa Tenggara Barat</option>
+                        </select>
+                        <img
+                          src="./assets//img/arrow-green.svg"
+                          alt=""
+                          class="icon-select"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input24"
+                        >Kota/Kabupaten:</label
+                      >
+                      <div class="col-md-7 position-relative">
+                        <select
+                          id="input24"
+                          class="form-control form-main form-main-select"
+                          disabled
+                        >
+                          <option selected>Nusa Tenggara Barat</option>
+                        </select>
+                        <img
+                          src="./assets//img/arrow-green.svg"
+                          alt=""
+                          class="icon-select"
+                        />
+                      </div>
+                    </div>
+                    
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input25"
+                        >Kecamatan:</label
+                      >
+                      <div class="col-md-7 position-relative">
+                        <select
+                          id="input25"
+                          class="form-control form-main form-main-select"
+                        >
+                          <option selected>Nusa Tenggara Barat</option>
+                        </select>
+                        <img
+                          src="./assets//img/arrow-green.svg"
+                          alt=""
+                          class="icon-select"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input26"
+                        >Desa/Kelurahan:</label
+                      >
+                      <div class="col-md-7 position-relative">
+                        <select
+                          id="input26"
+                          class="form-control form-main form-main-select"
+                        >
+                          <option selected>Nusa Tenggara Barat</option>
+                        </select>
+                        <img
+                          src="./assets//img/arrow-green.svg"
+                          alt=""
+                          class="icon-select"
+                        />
+                      </div>
+                    </div>
+                    
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input27"
+                        >Nomor Telepon:</label
+                      >
+                      <div class="col-md-7">
+                        <input
+                          type="text"
+                          class="form-control form-main"
+                          id="input27"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- DATA IBU  -->
+              <div class="card border-0 rounded-0 p-5 mb-3">
+                <div class="row">
+                  <div class="col-md-8 offset-md-2">
+                    <h4 class="title-daftar border-bottom mb-3">
+                      Data Ibu Kandung
+                    </h4>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input28"
+                        >Nama Ibu Kandung:</label
+                      >
+                      <div class="col-md-7">
+                        <input
+                          type="text"
+                          class="form-control form-main"
+                          id="input28"
+                        />
+                        <small class="form-text text-danger"
+                          >Tidak boleh kosong</small
+                        >
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input29"
+                        >Tanggal Lahir:</label
+                      >
+                      <div class="col-md-4 position-relative">
+                        <input
+                          type="text"
+                          class="form-control form-main datepicker"
+                          id="input29"
+                        />
+                        <img
+                          src="./assets//img/calendar-green.svg"
+                          alt=""
+                          class="icon-select"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input30"
+                        >Pekerjaan:</label
+                      >
+                      <div class="col-md-7">
+                        <input
+                          type="text"
+                          class="form-control form-main"
+                          id="input30"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input31"
+                        >Pendidikan:</label
+                      >
+                      <div class="col-md-7">
+                        <input
+                          type="text"
+                          class="form-control form-main"
+                          id="input31"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input32"
+                        >Alamat Lengkap:</label
+                      >
+                      <div class="col-md-7 d-flex align-items-center">
+                        <div class="form-check pl-0">
+                          <label class="form-check-label checkbox-address" for="defaultCheck2">
+                            Sama dengan alamat siswa
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-1 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        ></label
+                      >
+                      <div class="col-md-7">
+                        <textarea
+                          class="form-control form-main-textarea"
+                          id="input32"
+                          rows="3"
+                        ></textarea>
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input33"
+                        >Provinsi:</label
+                      >
+                      <div class="col-md-7 position-relative">
+                        <select
+                          id="input33"
+                          class="form-control form-main form-main-select"
+                          disabled
+                        >
+                          <option selected>Nusa Tenggara Barat</option>
+                        </select>
+                        <img
+                          src="./assets//img/arrow-green.svg"
+                          alt=""
+                          class="icon-select"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input34"
+                        >Kota/Kabupaten:</label
+                      >
+                      <div class="col-md-7 position-relative">
+                        <select
+                          id="input34"
+                          class="form-control form-main form-main-select"
+                          disabled
+                        >
+                          <option selected>Nusa Tenggara Barat</option>
+                        </select>
+                        <img
+                          src="./assets//img/arrow-green.svg"
+                          alt=""
+                          class="icon-select"
+                        />
+                      </div>
+                    </div>
+                    
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input35"
+                        >Kecamatan:</label
+                      >
+                      <div class="col-md-7 position-relative">
+                        <select
+                          id="input35"
+                          class="form-control form-main form-main-select"
+                        >
+                          <option selected>Nusa Tenggara Barat</option>
+                        </select>
+                        <img
+                          src="./assets//img/arrow-green.svg"
+                          alt=""
+                          class="icon-select"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input36"
+                        >Desa/Kelurahan:</label
+                      >
+                      <div class="col-md-7 position-relative">
+                        <select
+                          id="input36"
+                          class="form-control form-main form-main-select"
+                        >
+                          <option selected>Nusa Tenggara Barat</option>
+                        </select>
+                        <img
+                          src="./assets//img/arrow-green.svg"
+                          alt=""
+                          class="icon-select"
+                        />
+                      </div>
+                    </div>
+                    
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input37"
+                        >Nomor Telepon:</label
+                      >
+                      <div class="col-md-7">
+                        <input
+                          type="text"
+                          class="form-control form-main"
+                          id="input37"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- DATA WALI  -->
+              <div class="card border-0 rounded-0 p-5 mb-3">
+                <div class="row">
+                  <div class="col-md-8 offset-md-2">
+                    <h4 class="title-daftar border-bottom mb-3">
+                      Data Wali Siswa
+                    </h4>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input38"
+                        >Nama Wali:</label
+                      >
+                      <div class="col-md-7">
+                        <input
+                          type="text"
+                          class="form-control form-main"
+                          id="input38"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input39"
+                        >Tanggal Lahir:</label
+                      >
+                      <div class="col-md-4 position-relative">
+                        <input
+                          type="text"
+                          class="form-control form-main datepicker"
+                          id="input39"
+                        />
+                        <img
+                          src="./assets//img/calendar-green.svg"
+                          alt=""
+                          class="icon-select"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input40"
+                        >Pekerjaan:</label
+                      >
+                      <div class="col-md-7">
+                        <input
+                          type="text"
+                          class="form-control form-main"
+                          id="input40"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input41"
+                        >Pendidikan:</label
+                      >
+                      <div class="col-md-7">
+                        <input
+                          type="text"
+                          class="form-control form-main"
+                          id="input41"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input42"
+                        >Alamat Lengkap:</label
+                      >
+                      <div class="col-md-7 d-flex align-items-center">
+                        <div class="form-check pl-0">
+                          <label class="form-check-label checkbox-address" for="defaultCheck3">
+                            Sama dengan alamat siswa
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-1 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        ></label
+                      >
+                      <div class="col-md-7">
+                        <textarea
+                          class="form-control form-main-textarea"
+                          id="input42"
+                          rows="3"
+                        ></textarea>
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input43"
+                        >Provinsi:</label
+                      >
+                      <div class="col-md-7 position-relative">
+                        <select
+                          id="input43"
+                          class="form-control form-main form-main-select"
+                          disabled
+                        >
+                          <option selected>Nusa Tenggara Barat</option>
+                        </select>
+                        <img
+                          src="./assets//img/arrow-green.svg"
+                          alt=""
+                          class="icon-select"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input44"
+                        >Kota/Kabupaten:</label
+                      >
+                      <div class="col-md-7 position-relative">
+                        <select
+                          id="input44"
+                          class="form-control form-main form-main-select"
+                          disabled
+                        >
+                          <option selected>Nusa Tenggara Barat</option>
+                        </select>
+                        <img
+                          src="./assets//img/arrow-green.svg"
+                          alt=""
+                          class="icon-select"
+                        />
+                      </div>
+                    </div>
+                    
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input45"
+                        >Kecamatan:</label
+                      >
+                      <div class="col-md-7 position-relative">
+                        <select
+                          id="input45"
+                          class="form-control form-main form-main-select"
+                        >
+                          <option selected>Nusa Tenggara Barat</option>
+                        </select>
+                        <img
+                          src="./assets//img/arrow-green.svg"
+                          alt=""
+                          class="icon-select"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input46"
+                        >Desa/Kelurahan:</label
+                      >
+                      <div class="col-md-7 position-relative">
+                        <select
+                          id="input46"
+                          class="form-control form-main form-main-select"
+                        >
+                          <option selected>Nusa Tenggara Barat</option>
+                        </select>
+                        <img
+                          src="./assets//img/arrow-green.svg"
+                          alt=""
+                          class="icon-select"
+                        />
+                      </div>
+                    </div>
+                    
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input47"
+                        >Nomor Telepon:</label
+                      >
+                      <div class="col-md-7">
+                        <input
+                          type="text"
+                          class="form-control form-main"
+                          id="input47"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input48"
+                        >Hubungan Dengan Siswa:</label
+                      >
+                      <div class="col-md-7 position-relative">
+                        <select
+                          id="input48"
+                          class="form-control form-main form-main-select"
+                        >
+                          <option selected>Paman / Bibi</option>
+                        </select>
+                        <img
+                          src="./assets//img/arrow-green.svg"
+                          alt=""
+                          class="icon-select"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- DATA BERKAS  -->
+              <div class="card border-0 rounded-0 p-5 mb-3">
+                <div class="row">
+                  <div class="col-md-8 offset-md-2">
+                    <h4 class="title-daftar border-bottom mb-3">
+                      Data Berkas
+                    </h4>
+
+                    <div class="form-group row pt-3 mb-0">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        >Akte Kelahiran:</label
+                      >
+                      <div class="col-md-7 position-relative">
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span
+                              class="input-group-text file-upload"
+                              for="inputGroupFile02"
+                              ><img
+                                src="./assets/img/upload-form.svg"
+                                alt=""
+                                class="label-img"
+                            /></span>
+                          </div>
+                          <div class="custom-file">
+                            <input
+                              type="file"
+                              class="custom-file-input form-main"
+                              id="inputGroupFile02"
+                              aria-describedby="inputGroupFileAddon01"
+                            />
+                            <label
+                              class="custom-file-label"
+                              for="inputGroupFile02"
+                              >Pilih File</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 mb-0">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        
+                        >Kartu Keluarga:</label
+                      >
+                      <div class="col-md-7 position-relative">
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span
+                              class="input-group-text file-upload"
+                              for="inputGroupFile03"
+                              ><img
+                                src="./assets/img/upload-form.svg"
+                                alt=""
+                                class="label-img"
+                            /></span>
+                          </div>
+                          <div class="custom-file">
+                            <input
+                              type="file"
+                              class="custom-file-input form-main"
+                              id="inputGroupFile03"
+                              aria-describedby="inputGroupFileAddon01"
+                            />
+                            <label
+                              class="custom-file-label"
+                              for="inputGroupFile03"
+                              >Pilih File</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 mb-0">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        >SKL/Raport 5 Semester:</label
+                      >
+                      <div class="col-md-7 position-relative">
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span
+                              class="input-group-text file-upload"
+                              for="inputGroupFile04"
+                              ><img
+                                src="./assets/img/upload-form.svg"
+                                alt=""
+                                class="label-img"
+                            /></span>
+                          </div>
+                          <div class="custom-file">
+                            <input
+                              type="file"
+                              class="custom-file-input form-main"
+                              id="inputGroupFile04"
+                              aria-describedby="inputGroupFileAddon01"
+                            />
+                            <label
+                              class="custom-file-label"
+                              for="inputGroupFile04"
+                              >Pilih File</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group row pt-3 mb-0">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        >Ijazah:</label
+                      >
+                      <div class="col-md-7 position-relative">
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span
+                              class="input-group-text file-upload"
+                              for="inputGroupFile05"
+                              ><img
+                                src="./assets/img/upload-form.svg"
+                                alt=""
+                                class="label-img"
+                            /></span>
+                          </div>
+                          <div class="custom-file">
+                            <input
+                              type="file"
+                              class="custom-file-input form-main"
+                              id="inputGroupFile05"
+                              aria-describedby="inputGroupFileAddon01"
+                            />
+                            <label
+                              class="custom-file-label"
+                              for="inputGroupFile05"
+                              >Pilih File</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group row pb-1">
+                      <label
+                        class="col-md-3 col-form-label text-right"
+                        for="input16"
+                      ></label>
+                      <div class="col-md-8">
+                        <p class="note-form">
+                          File yang diunggah maksimal 5MB setiap file dengan format JPG/PNG/PDF
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Dialog Selesai Mendaftar  -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body pendaftaran-sukses">
+                <div class="text-center">
+                  <img src="" alt="" />
+                  <h5>Berhasil Mendaftar</h5>
+                  <p>Data pendaftaran akan segera diverifikas</p>
+                  <button type="button" class="btn btn-success px-5">Cetak Bukti Pendaftaran</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="footer-adresss">
+              <img
+                class="address-icon"
+                src="./assets/img/logo-sumbawa-barat-footer.svg"
+                alt="logo-sumbawa-barat"
+              />
+              <div class="address-text">
+                <div class="address-bold">
+                  Dinas Pendidikan Pemuda dan Olahraga Kabupaten Sumbawa Barat
+                </div>
+                <div class="address-thin">
+                  Komplek KTC, Kuang, Taliwang, Kabupaten Sumbawa barat, Nusa
+                  Tenggara Barat. 84455
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="d-flex justify-content-end align-item-center">
+              <div class="footer-contact">
+                <div class="contact-label">Hubungi kami</div>
+                <button class="contact-button">
+                  <img src="./assets/img/whatsapp-footer.svg" alt="whatsapp" />
+                  Whatsapp
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom-container">
+        <div class="footer-bottom">
+          <p>
+            Copyright © 2021, PPDB Online Real Time Online. All rights reserved.
+            Bekerjasama dengan previu.id
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+      integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"
+      integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ=="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
